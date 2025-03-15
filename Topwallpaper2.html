@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+
+
+    <title>TopWallpapersHub</title>
+
+    <style>
+        html {
+    background-color: #ffffff; /* Change this to any color you want */
+}
+
+        /* Apply font to the entire body */
+        body {
+            font-family: "Bebas Neue", sans-serif;
+            margin: 0;
+            background-image: url('images/your-background.jpg'); /* Add your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        .strait-regular {
+  font-family: "Strait", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+        /* Header styles */
+        .header {
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        /* Navigation styles */
+        .text1 a {
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 20px; /* Makes text more visible */
+        }
+
+        .text1 a:hover {
+            background-color: rgb(211, 79, 252);
+        }
+
+        /* Style search bar */
+        .popi {
+            background-color: rgb(66, 4, 82);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px;
+            flex-direction: column;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            border-radius: 0 0 40px 40px;
+        }
+
+        /* Updated .daddy section - moved out of .popi */
+        .daddy {
+            padding: 25px 50px;
+            color: rgb(216, 0, 0);
+          
+          
+           
+        }
+        .step{
+            padding-left: 40px;
+            display: flex;
+            gap: 20px;
+            
+            
+            
+            
+
+
+
+
+
+        }
+        .wallpaper p{
+            background-color: #ada5b18f;
+            color: rgb(0, 0, 0);
+            border-radius: 7px;
+            width: 50%;
+            padding: 7px;
+
+
+
+
+
+
+        }
+
+        .gallery {
+            
+            font-family: "Strait", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if the screen is small */
+    gap: 20px; /* Adds space between images */
+}
+
+        .wallpaper {
+    text-align: center; /* Center text under image */
+    display: flex;
+    flex-direction: column; /* Keep image above text */
+    align-items: center; /* Keep everything centered */
+    margin: 20px; /* Add spacing */
+}
+
+.wallpaper img {
+    width: 400px; /* Set a fixed width for all images */
+    height: 250px; /* Keep height consistent */
+    border: 5px solid #6a0080; /* Add border */
+    border-radius: 10px; /* Round corners */
+}
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block
+}
+.pagination a.active{
+    background-color: #aa2bc4;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(151, 151, 151);
+    border-radius: 10px;
+
+
+
+
+
+}
+.text-container {
+    font-family: "Strait", sans-serif;
+    display: flex; /* Make Text 3 and Text 4 in the same line */
+    gap: 30px; /* Adds space between them */
+    align-items: center; /* Keeps them aligned properly */
+    margin-left: 40px; /* Keep position aligned with the images */
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.text14 a {
+    display: inline-block; /* Allows width, padding, and margin */
+    padding: 10px 15px; /* Add padding inside */
+    margin-right: 12px; /* Space between items */
+    background-color: rgba(95, 91, 91, 0.452);
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 1px solid black; /* Add a border */
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.download-button img {
+    size: 25px;
+    width: 35px;  /* Make it smaller */
+    height: 30px; /* Make it smaller */
+    position: absolute;
+    top: 10px;  /* Move to top */
+    left: 10px; /* Move to left */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Background for visibility */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Space around */
+    border: none;
+}
+
+.download-button img:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+/* Navigation Container */
+.nav-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Home and List Button */
+.nav-link, .dropbtn {
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgba(210, 185, 229, 0.137);
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link:hover, .dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Dropdown Container */
+.dropdown {
+    
+    position: relative;
+    padding: 5px;
+    margin-right: 15px;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+    
+    
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.download-button img {
+    size: 25px;
+    width: 35px;  /* Make it smaller */
+    height: 30px; /* Make it smaller */
+    position: absolute;
+    top: 10px;  /* Move to top */
+    left: 10px; /* Move to left */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Background for visibility */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Space around */
+    border: none;
+}
+
+.download-button img:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+.ll12 {
+    font-family: monospace;
+
+    
+    color: white;
+    
+    padding-right: 550px;
+    font-size: 18px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    
+
+
+
+
+</head>
+<link rel="shortcut icon" type="x-icon" href="images/removel.100.png">
+
+<body>
+
+    <div class="header">
+        <img src="images/Removal-130.png" alt="Logo" width="80">
+        <div class="ll12">
+            <p>Download  free HD and 4K wallpapers for desktop</p>
+        </div>
+        <nav class="text1">
+            <div class="dropdown">
+                <button class="dropbtn">List ▾</button> <!-- Dropdown Button -->
+                <div class="dropdown-content">
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/Topwallpaper.html">Random Wallpapers</a>
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/animewallpapers.html">Anime Wallpapers</a>
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/carswallpaper.html">Cars Wallpapers</a>
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/cyberpunkWallpaper.html">Cyberpunk Wallpapers</a>
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/FantasyWallpaper.html">Fantasy Wallpapers</a>
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/gamingWallpaper.html">Gaming Wallpapers</a>
+                    <a href="file:///C:/Users/gamsc/Desktop/background.html/mangaWallpaper.html">Manga Wallpapers</a>
+                </div>
+            <a href="file:///C:/Users/gamsc/Desktop/background.html/Topwallpaper.html">Home</a>
+            
+            
+            
+        </nav>
+    </div>
+    
+    <!-- POPI SECTION -->
+    <div class="popi">
+        <div>
+            <span>Top Wallpapers Hub</span>
+            <h1>Transform Your Screen with Epic Wallpapers!</h1>
+        </div>
+    </div>
+    <div class="text-container">
+        <nav class="text14">
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/Topwallpaper.html">Random Wallpapers</a>
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/animewallpapers.html">anime style wallpaper</a>
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/carswallpaper.html">cars wallpaper</a>
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/cyberpunkWallpaper.html">cyberpunk style wallpaper</a>
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/FantasyWallpaper.html">fantasy Wallpaper</a>
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/gamingWallpaper.html">gaming wallpaper</a>
+        <a href="file:///C:/Users/gamsc/Desktop/background.html/mangaWallpaper.html">manga wallpaper</a>
+    </nav>
+        
+
+       
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- DADDY SECTION - Moved Outside POPI -->
+    <div class="gallery">
+        <div class="wallpaper">
+            <div class="image-container">
+            <img src="images/gta-wallpaper-full-hd.jpg.jpg" alt="Cyberpunk Wallpaper">
+            <a href="images/gta-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                <img src="images/download+3 (1).png" alt="Download">
+            </a>
+        </div>
+            <p>Gta style Wallpaper Full HD</p>
+        </div>
+        
+        <div class="wallpaper">
+            <div class="image-container">
+            <img src="images/fantasy-magic-sorcerer-wallpaper.jpg (3).jpg" alt="Fantasy Warrior Wallpaper">
+            <a href="images/fantasy-magic-sorcerer-wallpaper.jpg (3).jpg" download class="download-button">
+                <img src="images/download+3 (1).png" alt="Download">
+            </a>
+        </div>
+            <p>Fantasy magics Wallpaper Full HD</p>
+        </div>
+        
+        <div class="wallpaper">
+            <div class="image-container">
+            <img src="images/sword-war-fantasy-wallpaper-full-hd.jpg.jpg" alt="Fantasy Angel Wallpaper">
+            <a href="images/sword-war-fantasy-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                <img src="images/download+3 (1).png" alt="Download">
+            </a>
+        </div>
+            <p>swords war  Wallpaper Full HD</p>
+        </div>
+        
+            <div class="wallpaper">
+                <div class="image-container">
+                <img src="images/red-dead-redemption-wallpaper-full-hd.jpg.jpg" alt="Half Life Wallpaper">
+                <a href="images/red-dead-redemption-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                    <img src="images/download+3 (1).png" alt="Download">
+                </a>
+            </div>
+                <p>RED dead redemption Wallpaper Full HD</p>
+            </div>
+            
+            <div class="wallpaper">
+                <div class="image-container">
+                <img src="images/ninja-woman-wallpaper-full-hd.jpg.jpg" alt="Halo Wallpaper">
+                <a href="images/ninja-woman-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                    <img src="images/download+3 (1).png" alt="Download">
+                </a>
+            </div>
+                <p>cyberpunk ninja women Wallpaper Full HD</p>
+            </div>
+            
+            <div class="wallpaper">
+                <div class="image-container">
+                <img src="images/sad-warrior-fantasy-wallpaper-full-hd.jpg.jpg" alt="Fantasy Magic Wallpaper">
+                <a href="images/sad-warrior-fantasy-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                    <img src="images/download+3 (1).png" alt="Download">
+                </a>
+            </div>
+                <p>warrior Wallpaper Full HD</p>
+            </div>
+            <div class="wallpaper">
+                <div class="image-container">
+                <img src="images/japan-cyberpunk-style-wallpaper-full-hd.jpg.jpg" alt="Fantasy Magic Wallpaper">
+                <a href="images/japan-cyberpunk-style-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                    <img src="images/download+3 (1).png" alt="Download">
+                </a>
+            </div>
+                <p>Cyber punk japan streets style Full HD</p>
+            </div>
+            <div class="wallpaper">
+                <div class="image-container">
+                <img src="images/zombie-wallpaper-full-hd.jpg.jpg" alt="Fantasy Magic Wallpaper">
+                <a href="images/zombie-wallpaper-full-hd.jpg.jpg" download class="download-button">
+                    <img src="images/download+3 (1).png" alt="Download">
+                </a>
+            </div>
+                <p>zombi <style></style> Full HD</p>
+            </div>
+        </div>
+            
+
+
+            
+        
+        
+
+
+
+
+
+    
+</div>
+<div class="pagination">
+    <a href="file:///C:/Users/gamsc/Desktop/background.html/Topwallpaper.html"><</a>
+
+    <a href="file:///C:/Users/gamsc/Desktop/background.html/Topwallpaper.html">1</a>
+    <a href="file:///C:/Users/gamsc/Desktop/background.html/TOpwallpaperhub.html" class="active">2</a>
+    <a href="file:///C:/Users/gamsc/Desktop/background.html/3%20website.html">3</a>
+    <a href="file:///C:/Users/gamsc/Desktop/background.html/4%20web%20site.html">4</a>
+    
+    <a href="file:///C:/Users/gamsc/Desktop/background.html/3%20website.html">></a>
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
