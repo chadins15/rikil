@@ -1,0 +1,355 @@
+
+        html {
+    background-color: #ffffff; /* Change this to any color you want */
+}
+
+        /* Apply font to the entire body */
+        body {
+            font-family: "Bebas Neue", sans-serif;
+            margin: 0;
+            background-image: url('images/your-background.jpg'); /* Add your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        .strait-regular {
+  font-family: "Strait", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
+        /* Header styles */
+        .header {
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        /* Navigation styles */
+        .text1 a {
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 20px; /* Makes text more visible */
+        }
+
+        .text1 a:hover {
+            background-color: rgb(211, 79, 252);
+        }
+
+        /* Style search bar */
+        .popi {
+            background-color: rgb(66, 4, 82);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px;
+            flex-direction: column;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            border-radius: 0 0 40px 40px;
+        }
+
+        /* Updated .daddy section - moved out of .popi */
+        .daddy {
+            padding: 25px 50px;
+            color: rgb(216, 0, 0);
+          
+          
+           
+        }
+        .step{
+            padding-left: 40px;
+            display: flex;
+            gap: 20px;
+            
+            
+            
+            
+
+
+
+
+
+        }
+        .wallpaper p{
+            background-color: #ada5b18f;
+            color: rgb(0, 0, 0);
+            border-radius: 7px;
+            width: 50%;
+            padding: 7px;
+
+
+
+
+
+
+        }
+        
+        
+
+        .gallery {
+            font-family: "Strait", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if the screen is small */
+    gap: 20px; /* Adds space between images */
+}
+
+        .wallpaper {
+    text-align: center; /* Center text under image */
+    display: flex;
+    flex-direction: column; /* Keep image above text */
+    align-items: center; /* Keep everything centered */
+    margin: 20px; /* Add spacing */
+}
+
+.wallpaper img {
+    width: 400px; /* Set a fixed width for all images */
+    height: 250px; /* Keep height consistent */
+    border: 5px solid #6a0080; /* Add border */
+    border-radius: 10px; /* Round corners */
+}
+
+
+
+
+
+
+
+.text-container {
+    font-family: "Strait", sans-serif;
+    display: flex; /* Make Text 3 and Text 4 in the same line */
+    gap: 30px; /* Adds space between them */
+    align-items: center; /* Keeps them aligned properly */
+    margin-left: 40px; /* Keep position aligned with the images */
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.text14 a {
+    display: inline-block; /* Allows width, padding, and margin */
+    padding: 10px 15px; /* Add padding inside */
+    margin-right: 12px; /* Space between items */
+    background-color: rgba(95, 91, 91, 0.452);
+    color: black;
+    border-radius: 7px;
+    text-decoration: none;
+    border: 1px solid black; /* Add a border */
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.download-button img {
+    size: 25px;
+    width: 35px;  /* Make it smaller */
+    height: 30px; /* Make it smaller */
+    position: absolute;
+    top: 10px;  /* Move to top */
+    left: 10px; /* Move to left */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Background for visibility */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Space around */
+    border: none;
+}
+
+.download-button img:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+/* Navigation Container */
+.nav-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Home and List Button */
+.nav-link, .dropbtn {
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgba(210, 185, 229, 0.137);
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link:hover, .dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Dropdown Container */
+.dropdown {
+    
+    position: relative;
+    padding: 5px;
+    margin-right: 15px;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.download-button img {
+    size: 25px;
+    width: 35px;  /* Make it smaller */
+    height: 30px; /* Make it smaller */
+    position: absolute;
+    top: 10px;  /* Move to top */
+    left: 10px; /* Move to left */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Background for visibility */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Space around */
+    border: none;
+}
+
+.download-button img:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+/* Navigation Container */
+.nav-container {
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Home and List Button */
+.nav-link, .dropbtn {
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgba(210, 185, 229, 0.137);
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link:hover, .dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Dropdown Container */
+.dropdown {
+    
+    position: relative;
+    padding: 5px;
+    margin-right: 15px;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.ll12 {
+    font-family: monospace;
+
+    
+    color: white;
+    
+    padding-right: 550px;
+    font-size: 18px;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
